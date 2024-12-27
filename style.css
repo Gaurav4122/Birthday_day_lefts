@@ -1,0 +1,208 @@
+*{
+    margin:0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('./birthday1.jpg'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100vh;
+    width:100vw;
+
+}
+
+/* heading */
+h1{
+    text-align:center;
+    margin-top:0.5rem;
+    font-size: 50px;
+    font-weight: bold;
+    padding:0.9rem;
+}
+
+
+h2{
+    font-size:0px;
+    font-weight: bolder;
+    color:chocolate;
+}
+
+
+.main{
+    
+    display: flex;
+    justify-content: center;
+    position: relative;
+    /* height:100vh;
+    align-items: center; */
+    margin-top:40px;
+    gap:1.5rem;
+}
+   
+.images{
+    /* bottom:3rem; */
+    height:380px;
+    width:300px;
+    border-radius: 10px;
+}
+
+.box{
+    position:relative;
+    top:5rem;
+    height:140px;
+    width:140px;
+    border-radius:50%;
+    border: 2px solid pink;
+
+}
+
+/* for the days */
+.Days_showing{
+  
+   text-align: center;
+   margin-top:2.4rem;
+}
+.show_the_days_left{
+   left:4rem;
+   text-align: center;
+   margin-top:1rem;
+   font-weight: bolder;
+}
+
+/* for the hour */
+.hour_showing{
+  
+    text-align: center;
+    margin-top:2.4rem;
+}
+.hour_the_days_left{
+    left:4rem;
+    text-align: center;
+    margin-top:1rem;
+    font-weight: bolder;
+}
+/* for the minutes */
+
+.minutes_showing{
+  
+    text-align: center;
+    margin-top:2.4rem;
+}
+.minutes_the_days_left{
+    left:4rem;
+    text-align: center;
+    margin-top:1rem;
+    font-weight: bolder;
+}
+
+
+/* for the second */
+
+.second_showing{
+  
+    text-align: center;
+    margin-top:2.4rem;
+}
+.second_the_days_left{
+    left:4rem;
+    text-align: center;
+    margin-top:1rem;
+    font-weight: bolder;
+}
+
+
+/* media queries */
+@media(max-width:650px){
+    .main{
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+    }
+    .box{
+        top:0px;
+        height:100px;
+        width:100px;
+    
+    }
+    h1{
+        margin-top:0.5rem;
+        font-size:26px;
+       
+    }
+    h2{
+        font-size:10px;
+    }
+    body{
+        background-image:none; 
+    
+    }
+    
+    .show_the_days_left{
+        margin-top:0.8rem;
+        font-weight: bolder;
+     }
+    h2{
+        font-size: 50px;
+        margin-top:10px;
+        color:black;
+        text-align: center;
+        color:rgba(255, 0, 0, 0.596);
+    }
+     
+    .hour_showing,.Days_showing,.minutes_showing,.second_showing{
+        font-size:20px;
+        font-weight: bold;
+        margin-top:1.2rem;
+    }
+
+}
+
+
+/* for the tab media queries */
+@media (min-width:601px) and (max-width: 992px) {
+
+    .images{
+        /* bottom:3rem; */
+        height:650px;
+        width:600px;
+        border-radius: 10px;
+    }
+    .main{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .body{
+        width:100%;
+        height:100vh;
+    }
+    .box{
+        top:8rem;
+    }
+    h2{
+        font-size: 40px;
+        color:black;
+        text-align: center;
+        color:darkorchid;
+    }
+    body{
+        background-image: none;
+        position: relative;
+    }
+
+    .links{
+        position: absolute;
+        font-size: 45px;
+        font-weight: bold;
+        top:180vh;
+        right:0px;
+    }
+    h2{
+        font-size:70px;
+    }
+
+
+}
+
